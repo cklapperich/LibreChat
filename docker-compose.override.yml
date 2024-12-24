@@ -17,8 +17,6 @@ services:
     - type: bind
       source: ./librechat.yaml
       target: /app/librechat.yaml
-    environment:
-      - MONGO_URI=mongodb://mongodb.railway.internal:27017/LibreChat
 #     image: ghcr.io/danny-avila/librechat:latest
   mongodb:
     image: tianon/true
