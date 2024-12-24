@@ -21,7 +21,9 @@ services:
     command: ""
     entrypoint: ""
 # ---------------------------------------------------
-
+  meilisearch:
+    profiles:
+      - donotstart
 # # LOCAL BUILD
 #   api:
 #     image: librechat
