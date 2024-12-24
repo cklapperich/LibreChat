@@ -14,10 +14,8 @@
 services:
   api:
     volumes:
-    - type: bind
-      source: ./librechat.yaml
-      target: /app/librechat.yaml
-#     image: ghcr.io/danny-avila/librechat:latest
+    - ./config:/app/config
+# image: ghcr.io/danny-avila/librechat:latest
   mongodb:
     image: tianon/true
     command: ""
